@@ -27,7 +27,7 @@ Féliciations vous venez de créer votre premier projet Node.js. Jetez un coup d
 
 ### Etape 3 : Votre premier serveur HTTP
 
-[Express|https://github.com/strongloop/express] est un module qui permet de créer un serveur web en Node.js.
+[Express](https://github.com/strongloop/express) est un module qui permet de créer un serveur web en Node.js.
 
 En une seule commande npm, installez ce module dans votre projet et faites en sorte que le module soit automatiquement référencé dans le fichier package.json.
 Jetez à présent un coup d'oeil au contenu de votre projet, un nouveau répertoire vient d'être créé. Jetez y un coup d'oeil.
@@ -64,24 +64,23 @@ module.exports = function(grunt) {
 Désormais, vous pouvez lancer la commande grunt pour démarrer votre serveur et toute modification du code sera prise immédiatement en compte.
 
 
-### Etape 5 : Un backend
+### Etape 5 : Intégration d'un backend
 
-Firebase est une base de données NoSQL dans le cloud (https://www.firebase.com/docs/web/quickstart.html).
+Firebase est une base de données NoSQL dans le cloud.
 
 - création du compte dans Firebase
-- installation du module
+- [installation du module](https://www.firebase.com/docs/web/quickstart.html)
 - écriture des données dans Firebase
 - lecture des données dans Firebase
 
-### Etape 6 : une vue
+### Etape 6 : un peu d'HTML
 
-[Swig|https://github.com/paularmstrong/swig] est un module permettant de faire du templating HTML en Node.js.
+[Swig](https://github.com/paularmstrong/swig) est un module permettant de faire du templating HTML en Node.js.
 Il s'intègre très bien à Express : http://paularmstrong.github.io/swig/docs/#express.
 
 Attention au cache
 
 angular?
-
 
 ### TODO
 
@@ -89,3 +88,4 @@ angular?
 - modification des données
 - promeses / Q
 - tests
+- MEAN.js
