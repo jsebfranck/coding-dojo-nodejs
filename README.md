@@ -21,25 +21,46 @@ Créez un fichier hello.js qui affiche "hello world" dans la console puis exécu
 
 ### Création de votre premier projet
 
-npm init
+Lancez la commande "npm init" et suivez les différentes étapes de création du projet.
+
+Féliciations vous venez de créer votre premier projet Node.js. Jetez un coup d'oeil au fichier package.json qui vient d'être généré.
 
 ### Etape 2 : Mon premier serveur HTTP
 
 [Express|https://github.com/strongloop/express] est un module qui permet de créer un serveur web en Node.js.
 
-- Installez ce module dans votre nouveau projet à l'aide de la commande npm.
+En une seule commande npm, installez ce module dans votre projet et faites en sorte que le module soit automatiquement référencé dans le fichier package.json.
+Jetez à présent un coup d'oeil au contenu de votre projet, un nouveau répertoire vient d'être créé. Jetez y un coup d'oeil.
 
-npm install express --save
+Créez un fichier server.js à la racine de votre projet et utilisez le module Express. Votre objectif : faire en sorte que votre serveur
+renvoie une liste d'animaux sur l'url /pets :
+``
+$ curl http://localhost:3000/pets
+[{"name":"Heidi","kind":"Dog","age":3},{"name":"Pluto","kind":"Dog","age":14},{"name":"Heidi","kind":"Dog","age":4}]
+```
 
 ### Etape 3 : Un peu d'outillage
 
-Fatigué de redémarrer votre serveur ?
+Fatigué de redémarrer votre serveur ? Créez un fichier gruntfile.js à la racine de votre projet avec le contenu suivant :
 
-gruntfile.js
-npm install grunt-cli -g
 
-Essayez à présent de modifier votre code...
+```
+module.exports = function(grunt) {
+  grunt.initConfig({
+    nodemon: {
+      dev: {
+        script: 'server.js'
+      }
+    }
+  });
 
+  grunt.loadNpmTasks("grunt-nodemon");
+
+  grunt.registerTask("default", ["nodemon:dev"]);
+};
+```
+
+Désormais, vous pouvez lancer la commande grunt pour démarrer votre serveur et toute modification du code sera prise immédiatement en compte.
 
 ### Etape 4 : une vue
 
@@ -47,11 +68,11 @@ swig, angular?
 
 ### Etape 5 : Un backend
 
-Firebase, Elasticsearch, mongodb
-
-### Etape 6 : Modification des données
+Firebase, Elasticsearch, mongodb?
 
 ### TODO
 
+- modification des données
 - promeses / Q
 - découpage route / controller / service
+- tests ?
