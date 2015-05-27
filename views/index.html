@@ -1,3 +1,5 @@
-<h1>hello world</h1>
+<h1>Liste des animaux</h1>
 
-<p>DONNÉES : {{ JSON.stringify(data) }}</p>
+{% for pet in pets %}
+    <p>Nom {{ pet.name}}, age {{ pet.age }}</p>
+{%  endfor %}

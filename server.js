@@ -4,6 +4,7 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var Firebase = require("firebase");
 var swig = require('swig');
+
 var myFirebaseRef = new Firebase("https://kata-node-elsassjug.firebaseio.com/test1");
 
 var app = express();
@@ -22,7 +23,7 @@ app.use(bodyParser.json());
 app.get('/', function(req, res) {
   myFirebaseRef.once("value", function(data) {
     res.render('index', {
-      data: data.val()
+      pets: data.val()
     });
   });
 });
