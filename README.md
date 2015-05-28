@@ -116,10 +116,10 @@ Puis lancez la commande grunt, et rendez vous à l'url http://localhost:3000/#!/
 
 Félicitations, vous avez bootstrappé un projet MEAN.js. Vous pouvez à présent jeter un coup d'oeil au code et essayer de le modifier.
 
-### Etape 10 : Pour aller plus loin
+### Etape 9 : un peu de refactoring
 
 Dans le projet créé en Etape 2, vous avez peut-être écrit tout le code directement dans server.js. Inspirez vous de la structure du projet MEAN.js pour créer un découpage propre entre chacune des couches du projet : route / controller / service.
 
-### Etape 11 : les promesses
+### Etape 10 : les promesses
 
 La gestion de l'ansynchrone en Node.js n'est pas habituelle pour un développeur qui fait peu de Javascript. Les promesses permettent de faciliter cette gestion. Essayer d'utiliser le module Q ou le module bluebird pour comprendre comment ça fonctionne.
