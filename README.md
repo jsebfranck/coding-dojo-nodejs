@@ -66,11 +66,9 @@ Désormais, vous pouvez lancer la commande grunt pour démarrer votre serveur et
 
 Une alternative à grunt est gulp. Grunt ou Gulp permettent de gérer toutes les tâches autour de votre projet : exécution des tests, build, minification, gestion des feuilles de style etc.
 
-
 ### Etape 5 : Intégration d'un backend
 
-Firebase est une base de données NoSQL dans le cloud. Les données y sont stockées en JSON. Elle est particulièrement appréciée pour la synchronisation
-des données en temps réel sur chacun des clients et pour son hébergement de Single Page Application.
+Firebase est une base de données NoSQL dans le cloud. Les données y sont stockées en JSON. Elle est particulièrement appréciée pour la synchronisation des données en temps réel sur chacun des clients et pour son hébergement de Single Page Application.
 
 Ici, nous allons utiliser la partie stockage des données, comme une alternative à une base de données MongoDB par exemple.
 
@@ -83,11 +81,12 @@ Utilisez à présent les fonctions d'écriture et de lecture du module Firebase 
 ### Etape 6 : un peu d'HTML
 
 [Swig](https://github.com/paularmstrong/swig) est un module permettant de faire du templating HTML en Node.js.
-Il s'intègre très bien à Express : http://paularmstrong.github.io/swig/docs/#express (attention à bien désactiver le cache).
 
-Créez une page index.html qui affiche un hello world et affichez cette page sur l'url /.
+A partir de la [documentation](http://paularmstrong.github.io/swig/docs/#express), intégrez Swig à Express. Attention à bien désactiver le cache pour éviter de redémarer votre serveur à chaque fois que vous modifierez votre template HTML.
 
-Maintenant, récupérez dans Firebase la liste des animaux, passez cette liste dans le contexte swig, et affichez les noms des animaux dans la page index.html.
+A présent, créer un fichier index.html dans un répertoire views et affichez y un hello world. Puis faites en sorte que l'url / affiche votre fichier index.html.
+
+Enfin, récupérez dans Firebase la liste des animaux, passez cette liste dans le contexte swig, et affichez les noms des animaux dans la page index.html.
 
 ### Etape 7 : la stack MEAN.js
 
