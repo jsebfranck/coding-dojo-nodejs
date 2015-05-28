@@ -91,24 +91,19 @@ Maintenant, récupérez dans Firebase la liste des animaux, passez cette liste d
 
 ### Etape 7 : la stack MEAN.js
 
-MEAN ou Mongo Express Angular Node.js est une stack très populaire alliant 4 outils qui manipulent du JSON et qui sont asynchrones.
+MEAN ou Mongo Express Angular Node.js est une stack très populaire permettant de créer une application web complète en se basant sur des outils qui manipulent du JSON du browser à la base de données.
 
-Le projet [MEAN.js](https://github.com/meanjs/mean) propose de créer un projet complet avec tous les outils nécessaires
-pour démarrer les développements ainsi qu'une structure respectant les bonnes pratiques de développement de Node.js et d'Angular.
+Le projet [MEAN.js](https://github.com/meanjs/mean) propose de créer un projet complet avec tous les outils nécessaires pour démarrer les développements ainsi qu'une bonne base de code respectant les bonnes pratiques de développement de Node.js et d'Angular, notamment en ce qui concerne la testabilité.
 
-Générez votre projet à partir de la [documentation de Mean.js](http://meanjs.org/generator.html).
-Attention, le projet sera généré directement dans le répertoire courant. Il est donc préférable de lancer les commandes de génération
-dans un répertoire vide.
+En vous basant sur la [documentation de Mean.js](http://meanjs.org/generator.html), générez un projet MEAN.js. Attention, le projet sera généré directement dans le répertoire courant. Il est donc préférable de lancer les commandes de génération dans un répertoire vide.
 
-Installez à présent une base MongoDB en local.
+Installez à présent une base [MongoDB](https://www.mongodb.org/downloads) en local.
 
 Puis lancez la commande grunt, et rendez vous à l'url http://localhost:3000/#!/signup.
 
-Félicitations, vous avez bootstrappé un projet MEAN.js.
+Félicitations, vous avez bootstrappé un projet MEAN.js. Vous pouvez à présent jeter un coup d'oeil au code et essayer de le modifier.
 
 ### TODO
 
 - découpage route / controller / service
-- modification des données
 - promeses / Q
-- tests
