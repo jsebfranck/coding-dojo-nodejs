@@ -78,7 +78,7 @@ Faites en sorte de pouvoir ajouter un animal de la manière suivante :
 $ curl -H "Content-Type: application/json" -X POST http://localhost:3000/pet -d '{"name": "Rockie", "age": "4"}'
 ```
 
-La difficulté ici est de parser le contenu du body. Pour faire cela, vous allez devoir installer un autre module...
+Pour l'instant on se contentera d'afficher les informations du body dans la console du serveur. La difficulté ici est de parser le contenu du body. Pour faire cela, vous allez devoir installer un autre module...
 
 ### Etape 6 : Intégration d'un backend ![Intermediate](icons/dojo-difficulty-intermediate.png)
 
