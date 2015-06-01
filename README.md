@@ -92,7 +92,7 @@ Ensuite, installez le module [Node.js](https://www.firebase.com/docs/web/quickst
 
 Utilisez à présent les fonctions d'écriture et de lecture du module Firebase pour créer et lister des animaux, en remplacant le code des requêtes GET /pets et POST /pet.
 
-### Etape 7 : un peu d'HTML
+### Etape 7 : Un peu d'HTML
 
 [Swig](https://github.com/paularmstrong/swig) est un module permettant de faire du templating HTML en Node.js.
 
@@ -102,7 +102,7 @@ A présent, créer un fichier index.html dans un répertoire views et affichez y
 
 Enfin, récupérez dans Firebase la liste des animaux, passez cette liste dans le contexte swig, et affichez les noms des animaux dans la page index.html.
 
-### Etape 8 : la stack MEAN.js
+### Etape 8 : MEAN.js
 
 MEAN ou Mongo Express Angular Node.js est une stack très populaire permettant de créer une application web complète en se basant sur des outils qui manipulent du JSON du browser à la base de données.
 
@@ -116,10 +116,10 @@ Puis lancez la commande grunt, et rendez vous à l'url http://localhost:3000/#!/
 
 Félicitations, vous avez bootstrappé un projet MEAN.js. Vous pouvez à présent jeter un coup d'oeil au code et essayer de le modifier.
 
-### Etape 9 : un peu de refactoring
+### Etape 9 : Refactoring
 
 Dans le projet créé en Etape 2, vous avez peut-être écrit tout le code directement dans server.js. Inspirez vous de la structure du projet MEAN.js pour créer un découpage propre entre chacune des couches du projet : route / controller / service.
 
-### Etape 10 : les promesses
+### Etape 10 : Les promesses
 
 La gestion de l'ansynchrone en Node.js n'est pas habituelle pour un développeur qui fait peu de Javascript. Les promesses permettent de faciliter cette gestion. Essayer d'utiliser le module Q ou le module bluebird pour comprendre comment ça fonctionne.
