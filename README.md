@@ -35,18 +35,18 @@ Féliciations vous venez de créer votre premier projet Node.js. Jetez un coup d
 En une seule commande npm, installez ce module dans votre projet et faites en sorte que le module soit automatiquement référencé dans le fichier package.json.
 Jetez à présent un coup d'oeil au contenu de votre projet, un nouveau répertoire vient d'être créé. Jetez y un coup d'oeil.
 
-Créez un fichier server.js à la racine de votre projet et utilisez le module Express. Votre objectif : faire en sorte que votre serveur
-renvoie une liste d'animaux sur l'url /pets :
+Créez un fichier server.js à la racine de votre projet et utilisez le module Express. Votre objectif : faire en sorte que votre serveur renvoie une liste d'animaux sur l'url /pets :
 
 ```
 $ curl http://localhost:3000/pets
 [{"name":"Heidi","kind":"Dog","age":3},{"name":"Pluto","kind":"Dog","age":14},{"name":"Heidi","kind":"Dog","age":4}]
 ```
 
+Pour tester votre serveur, vous pouvez aussi utiliser un client graphique, par exemple le plugin Postman pour Chrome / Firefox.
+
 ### Etape 4 : Un peu d'outillage
 
 Fatigué de redémarrer votre serveur à chaque modification du code ? Créez un fichier gruntfile.js à la racine de votre projet avec le contenu suivant :
-
 
 ```
 module.exports = function(grunt) {
@@ -86,7 +86,7 @@ Firebase est une base de données NoSQL dans le cloud. Les données y sont stock
 
 Ici, nous allons utiliser la partie stockage des données, comme une alternative à une base de données MongoDB par exemple.
 
-Pour commencer, créez vous un compte sur Firebase. C'est gratuit et vous ne le regretterez pas!
+Pour commencer, créez-vous un compte sur Firebase. C'est gratuit et vous ne le regretterez pas!
 
 Ensuite, installez le module [Node.js](https://www.firebase.com/docs/web/quickstart.html) dans le projet.
 
