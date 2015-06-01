@@ -1,5 +1,5 @@
 
-### Etape 0 : Installation de Node.js
+### Etape 0 : Installation de Node.js ![Easy](icons/dojo-difficulty-easy.png)
 
 - Pour les utilisateurs de windows, vous pouvez passer directement par l'installeur classique. En bonus ça serait mieux d'avoir une ligne de commande user friendly, par exemple cygwin.
 - Pour les autres, je vous préconise d'installer Node Version Manager qui vous permettra de facilement changer de version de Node.js, mais vous pouvez aussi passer par l'installeur classique.
@@ -16,19 +16,19 @@ grunt --version
 
 Nous réutiliserons les commandes node, npm, grunt et bower dans les étapes suivantes.
 
-### Etape 1 : Hello world
+### Etape 1 : Hello world ![Easy](icons/dojo-difficulty-easy.png)
 
 Créez un fichier hello.js qui affiche "hello world" dans la console puis exécutez ce fichier avec la commande node.
 
 Félicitations, vous faites du Node.js ;-)
 
-### Etape 2 : Votre premier projet
+### Etape 2 : Votre premier projet ![Easy](icons/dojo-difficulty-easy.png)
 
 Lancez la commande "npm init" et suivez les différentes étapes de création du projet.
 
 Féliciations vous venez de créer votre premier projet Node.js. Jetez un coup d'oeil au fichier package.json qui vient d'être généré. Ce fichier permet de décrire votre projet et de préciser quelles dépendances votre projet utilise.
 
-### Etape 3 : Votre premier serveur HTTP
+### Etape 3 : Votre premier serveur HTTP ![Intermediate](icons/dojo-difficulty-intermediate.png)
 
 [Express](https://github.com/strongloop/express) est un module qui permet de créer un serveur web en Node.js.
 
@@ -44,7 +44,7 @@ $ curl http://localhost:3000/pets
 
 Pour tester votre serveur, vous pouvez aussi utiliser un client graphique, par exemple le plugin Postman pour Chrome / Firefox.
 
-### Etape 4 : Un peu d'outillage
+### Etape 4 : Un peu d'outillage ![Easy](icons/dojo-difficulty-easy.png)
 
 Fatigué de redémarrer votre serveur à chaque modification du code ? Créez un fichier gruntfile.js à la racine de votre projet avec le contenu suivant :
 
@@ -68,7 +68,7 @@ Désormais, vous pouvez lancer la commande grunt pour démarrer votre serveur et
 
 Une alternative à grunt est gulp. Grunt ou Gulp permettent de gérer toutes les tâches autour de votre projet : exécution des tests, build, minification, gestion des feuilles de style etc.
 
-### Etape 5 : Requête HTTP Post
+### Etape 5 : Requête HTTP Post ![Intermediate](icons/dojo-difficulty-intermediate.png)
 
 Pour l'instant, on a géré une requête de type GET dans Express. Désormais vous allez gérer un POST. 
 
@@ -80,7 +80,7 @@ $ curl -H "Content-Type: application/json" -X POST http://localhost:3000/pet -d 
 
 La difficulté ici est de parser le contenu du body. Pour faire cela, vous allez devoir installer un autre module...
 
-### Etape 6 : Intégration d'un backend
+### Etape 6 : Intégration d'un backend ![Intermediate](icons/dojo-difficulty-intermediate.png)
 
 Firebase est une base de données NoSQL dans le cloud. Les données y sont stockées en JSON. Elle est particulièrement appréciée pour la synchronisation des données en temps réel sur chacun des clients et pour son hébergement de Single Page Application.
 
@@ -92,7 +92,7 @@ Ensuite, installez le module [Node.js](https://www.firebase.com/docs/web/quickst
 
 Utilisez à présent les fonctions d'écriture et de lecture du module Firebase pour créer et lister des animaux, en remplacant le code des requêtes GET /pets et POST /pet.
 
-### Etape 7 : Un peu d'HTML
+### Etape 7 : Un peu d'HTML ![Intermediate](icons/dojo-difficulty-intermediate.png)
 
 [Swig](https://github.com/paularmstrong/swig) est un module permettant de faire du templating HTML en Node.js.
 
@@ -102,7 +102,7 @@ A présent, créer un fichier index.html dans un répertoire views et affichez y
 
 Enfin, récupérez dans Firebase la liste des animaux, passez cette liste dans le contexte swig, et affichez les noms des animaux dans la page index.html.
 
-### Etape 8 : MEAN.js
+### Etape 8 : MEAN.js ![Intermediate](icons/dojo-difficulty-intermediate.png)
 
 MEAN ou Mongo Express Angular Node.js est une stack très populaire permettant de créer une application web complète en se basant sur des outils qui manipulent du JSON du browser à la base de données.
 
@@ -116,10 +116,10 @@ Puis lancez la commande grunt, et rendez vous à l'url http://localhost:3000/#!/
 
 Félicitations, vous avez bootstrappé un projet MEAN.js. Vous pouvez à présent jeter un coup d'oeil au code et essayer de le modifier.
 
-### Etape 9 : Refactoring
+### Etape 9 : Refactoring ![Intermediate](icons/dojo-difficulty-intermediate.png)
 
 Dans le projet créé en Etape 2, vous avez peut-être écrit tout le code directement dans server.js. Inspirez vous de la structure du projet MEAN.js pour créer un découpage propre entre chacune des couches du projet : route / controller / service.
 
-### Etape 10 : Les promesses
+### Etape 10 : Les promesses ![Hard](icons/dojo-difficulty-hard.png)
 
 La gestion de l'ansynchrone en Node.js n'est pas habituelle pour un développeur qui fait peu de Javascript. Les promesses permettent de faciliter cette gestion. Essayer d'utiliser le module Q ou le module bluebird pour comprendre comment ça fonctionne.
